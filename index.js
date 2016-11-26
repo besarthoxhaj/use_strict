@@ -1,28 +1,14 @@
 'use strict';
 
 // ReferenceError: foo is not defined
-// foo = 'foo';
+foo = 'foo';
 
-// var bar = 'test';
-// function test(){}
+var bar = 'test';
+function test(){}
 
 // SyntaxError: Delete of an unqualified identifier in strict mode.
-// delete bar;
-// delete test;
-
-var a = 'Hello';
-(function deleteA() {
-  var a = 'world';
-  console.log(a); // --> world
-  try {
-    delete a;
-  } catch(e) {
-    console.log('e',e);
-  }
-  console.log(a); // --> world
-}());
-
-/*
+delete bar;
+delete test;
 
 function test2(arg) {
   // SyntaxError: Delete of an unqualified identifier in strict mode.
@@ -41,5 +27,3 @@ function sum(a, a, c) {
 }
 
 sum(1,2,3); // ???
-
-*/

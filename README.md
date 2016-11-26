@@ -34,3 +34,24 @@ var a = 'Hello';
  * http://perfectionkills.com/understanding-delete/#deleting_variables_via_eval
  */
 ```
+
+The above means that it is not possible to do something like this (which is a pity):
+
+```js
+var a = 'hello';
+var b = {
+  c:a
+};
+
+var aa = b.c;
+
+delete aa;
+```
+
+## Declaration and expressions
+
+Consider the following code:
+
+```js
+
+```
